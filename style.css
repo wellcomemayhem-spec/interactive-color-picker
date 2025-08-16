@@ -21,6 +21,7 @@ body {
     width: 100%;
     height: 300px;
     border-radius: 50%;
+    /* Creates a circular gradient for the color representation */
     background: conic-gradient(from 90deg, red, yellow, lime, cyan, blue, magenta, red);
     margin: 20px 0;
 }
