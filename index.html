@@ -9,13 +9,13 @@
 <body>
     <div class="container">
         <h1>Interactive Color Picker</h1>
-        <div id="color-wheel"></div>
+        <div id="color-wheel" aria-label="Color selection wheel"></div>
         <div class="controls">
-            <input type="range" id="saturation" min="0" max="100" value="100">
-            <input type="range" id="brightness" min="0" max="100" value="100">
+            <input type="range" id="saturation" min="0" max="100" value="100" aria-label="Saturation level">
+            <input type="range" id="brightness" min="0" max="100" value="100" aria-label="Brightness level">
             <button id="add-to-palette">Add to Palette</button>
         </div>
-        <div id="palette"></div>
+        <div id="palette" aria-label="Color palette"></div>
     </div>
     <script src="script.js"></script>
 </body>
