@@ -20,6 +20,7 @@ colorWheel.addEventListener('click', (event) => {
 
 function getColorFromAngle(angle) {
     const hue = ((angle * (180 / Math.PI)) + 360) % 360;
+    // Return color in HSL format based on hue and the saturation and brightness slider values
     return `hsl(${hue}, ${saturationSlider.value}%, ${brightnessSlider.value}%)`;
 }
 
@@ -38,18 +39,22 @@ brightnessSlider.addEventListener('input', () => {
 });
 
 addToPaletteButton.addEventListener('click', () => {
+    // Create a new div to represent the color in the palette
     const colorDiv = document.createElement('div');
     colorDiv.classList.add('palette-color');
     colorDiv.style.backgroundColor = selectedColor;
     paletteDiv.appendChild(colorDiv);
+    // Save the updated palette to local storage
     savePalette();
 });
 
 function savePalette() {
     const palette = [];
     const colors = paletteDiv.children;
+    // Loop through existing colors in the palette and store them in the palette array
     for (let color of colors) {
         palette.push(color.style.backgroundColor);
     }
+    // Save the palette array to local storage
     localStorage.setItem('palette', JSON.stringify(palette));
 }
