@@ -1,9 +1,12 @@
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
     text-align: center;
 }
+
+/* Container for the main content */
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -12,6 +15,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Color wheel styling */
 #color-wheel {
     width: 100%;
     height: 300px;
@@ -19,15 +24,21 @@ body {
     background: conic-gradient(from 90deg, red, yellow, lime, cyan, blue, magenta, red);
     margin: 20px 0;
 }
+
+/* Controls container */
 .controls {
     margin: 20px 0;
 }
+
+/* Palette container */
 #palette {
     margin: 20px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/* Individual palette colors */
 .palette-color {
     width: 50px;
     height: 50px;
