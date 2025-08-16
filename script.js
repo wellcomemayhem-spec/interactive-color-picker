@@ -26,11 +26,15 @@ function getColorFromAngle(angle) {
 saturationSlider.addEventListener('input', () => {
     // Update the color wheel background when saturation changes
     colorWheel.style.backgroundColor = getColorFromAngle(Math.atan2(1, 1));
+    // Also update selectedColor to reflect the change
+    selectedColor = colorWheel.style.backgroundColor;
 });
 
 brightnessSlider.addEventListener('input', () => {
     // Update the color wheel background when brightness changes
     colorWheel.style.backgroundColor = getColorFromAngle(Math.atan2(1, 1));
+    // Also update selectedColor to reflect the change
+    selectedColor = colorWheel.style.backgroundColor;
 });
 
 addToPaletteButton.addEventListener('click', () => {
