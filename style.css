@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#color-wheel {
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(from 90deg, red, yellow, lime, cyan, blue, magenta, red);
+    margin: 20px 0;
+}
+.controls {
+    margin: 20px 0;
+}
+#palette {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.palette-color {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
